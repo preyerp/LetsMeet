@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#88C3F1"
+        android:paddingVertical="10dp"
+        android:text="목적 설정"
+        android:textSize="25dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:id="@+id/choicePurpose"
+            android:layout_weight="9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radButRestaurant"
+                android:text="식사"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <RadioButton
+                android:id="@+id/radButCafe"
+                android:text="카페"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:hint="출발지"
+        android:textSize="25dp"
+        android:background="#88C3F1"
+        android:paddingVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/stationListText"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:hint=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <AutoCompleteTextView
+            android:id="@+id/subway_station_autocomplete"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:hint="출발역을 입력하세요."/>
+        <Button
+            android:id="@+id/addStationButt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:background="@drawable/btn_blue"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:text="추가" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/subwayButton"
+        android:layout_margin="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_blue"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="장소 탐색" />
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
